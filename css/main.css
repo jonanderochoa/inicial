@@ -94,22 +94,77 @@ textarea {
 /* ==========================================================================
    Author's custom styles
    ========================================================================== */
+/************* ESTILOS GENERALES ************* */
+*{
+    font-size: 16px;
+    color:black;
+}
 
+h1,h2{
+    color:#b3d4fc;
+}
+h1{
+    text-align: center;
+    font-size: 120%;
+    font-weight: bold; /* Es lo mismo que bolder */
+}
 
+p{
+    text-align: justify;
+}
 
+/******** MAQUETO TABLA SERIES **********/
 
+a{
+    text-decoration: none;
+    color:white;
+}
+table{
+    width: 100%;
+    /* border:5px solid black;
+    Es lo mismo que */
+    border-width: 5px;
+    border-style: groove;
+    border-color: bisque;
+}
 
+table th,table tr, table td{
+    border-width: 1px;
+    border-style: solid;
+    border-color: black;
+}
 
+table tfoot tr, table thead tr{
+    border-width: 2px;
+    border-style: solid;
+    border-color: black;
+}
 
+table tfoot td{
+    border:none;
+}
+.lft{
+    float:left;
+}
 
+div#audio{
+    background-color: green;
+}
+nav ul li{
+    float:left;
+    width: 33%;
+    text-align: center;
+    list-style: none;
+    text-decoration: none;
+    border-radius: 10px 10px 0px 0px;
+    background-color: darkseagreen;
+    transition: background-color 2s;/*para que el efecto de cambio sea en 2 seg*/
+}
 
-
-
-
-
-
-
-
+nav ul li:hover{
+    background-color:darkblue;
+    color:white;
+}
 
 /* ==========================================================================
    Helper classes

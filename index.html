@@ -5,6 +5,8 @@
         <meta http-equiv="x-ua-compatible" content="ie=edge">
         <title></title>
         <meta name="description" content="">
+        <!-- Le decimos que la anchura sea la anchura de la pantalla del dispositivo -->
+        <!-- Ajusta el pixel a la resolucion del dispositivo -->
         <meta name="viewport" content="width=device-width, initial-scale=1">
 
         <link rel="apple-touch-icon" href="apple-touch-icon.png">
@@ -19,8 +21,129 @@
             <p class="browserupgrade">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade your browser</a> to improve your experience.</p>
         <![endif]-->
 
-        <!-- Add your site or application content here -->
-        <p>Hello world! This is HTML5 Boilerplate.</p>
+        <header><h1>Bienvenido a mi Web</h1></header>
+
+        <nav>
+            <ul>
+                <li><a href="#listas_ordenadas">Listas ordenadas</a></li>
+                <li><a href="#listas_ordenadas">Listas ordenadas</a></li>
+                <li><a href="#section_multimedia">Mutimedia</a></li>
+            </ul>
+        </nav>
+
+        <main>
+            <section id="listas_ordenadas">
+                <header><h2>Listas no ordenadas</h2></header>
+                <div>
+                    Lista de series:
+                    <ol>
+                        <li>Series de animación
+                            <ul>
+                                <li>Dragoi Bola</li>
+                                <li>Dragoi Bola</li>
+                            </ul>
+                        </li>
+                        <li>Series no animadas
+                            <ol>
+                                <li>Fringe</li>
+                                <li>Futurama</li>
+                                <li>Mr. Robot</li>
+                            </ol>
+                        </li>
+                    </ol>
+                </div>
+            </section>
+            <section id="tabla2">
+                <header><h2>Tabla de ejemplo</h2></header>
+                <table id="tabla_series">
+                    <!--
+                    Las tablas se usan para mostrar datos
+                    en pantalla. PARA NADA MAS!!
+                    -->
+                    <caption>Series de netflix</caption>
+                    <thead>
+                        <tr>
+                            <th>Título</th>
+                            <th>Año</th>
+                            <th>Duración</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td rowspan="2">Futurama</td>
+                            <td>1999-2008</td>
+                            <td rowspan="2">30 min.</td>
+                        </tr>
+                        <tr>
+                            <td>2010-2013</td>
+                        </tr>
+                        <tr>
+                            <td>Padre de familia</td>
+                            <td>1999-Actualmente</td>
+                            <td>35 min.</td>
+                        </tr>
+                    </tbody>
+                    <tfoot>
+                        <tr>
+                            <td>Número de series</td>
+                            <td colspan="2">2</td>
+                        </tr>
+                    </tfoot>
+                </table>
+            </section>
+            <section id="section_multimedia">
+                <header><h2>Multimedia</h2></header>
+                <div class="clearfix"><!--Clearfix rompe el salto de linea despues del div como clear:both -->
+                    <div class="lft" width="200" height="200">
+                        <audio controls>
+                            <source src="multimedia/kalimba.mp3" type="audio/mpeg"/>
+                        </audio>
+                    </div>
+                    <div class="lft" width="200" height="200">
+                        <audio controls>
+                            <source src="multimedia/Sleep%20Away.mp3" type="audio/mpeg"/>
+                        </audio>
+                    </div>
+                    <div class="lft" width="200" height="200">
+                        <audio controls>
+                            <source src="multimedia/Maid%20with%20the%20Flaxen%20Hair.mp3" type="audio/mpeg"/>
+                        </audio>
+                    </div>
+                </div>
+                <div id="video">
+                    <video controls>
+                        <source src="">
+                    </video>
+                    <div style="position:relative;height:0;padding-bottom:50.0%"><iframe
+                    src="https://www.youtube.com/embed/6YqyGPW-foA?ecver=2"
+                    width="200" height="200" frameborder="0"
+                    style="position:absolute;width:50%;height:60%;left:0"
+                    allowfullscreen></iframe>
+                    </div>
+                </div>
+            </section>
+
+            <section>
+                <div class=clearfix">
+                    <div class="lft">
+                        <div>
+
+                        </div>
+                        <div>
+
+                        </div>
+                    </div>
+                    <div class="lft">
+
+                    </div>
+                    <div class="lft">
+
+                    </div>
+                </div>
+            </section>
+        </main>
+
+
 
         <script src="https://code.jquery.com/jquery-1.12.0.min.js"></script>
         <script>window.jQuery || document.write('<script src="js/vendor/jquery-1.12.0.min.js"><\/script>')</script>
