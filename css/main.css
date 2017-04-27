@@ -165,7 +165,22 @@ nav ul li:hover{
     background-color:darkblue;
     color:white;
 }
+.miancho{
+    width: 32%;
+    text-align: justify;
+}
 
+.medio{
+    width: 50%;
+    height:300px;
+}
+.fondito{
+    background-color: #888888;
+}
+
+button{
+    background-color: #b3d4fc;
+}
 /* ==========================================================================
    Helper classes
    ========================================================================== */
@@ -276,7 +291,6 @@ nav ul li:hover{
         text-shadow: none !important;
     }
 
-    a,
     a:visited {
         text-decoration: underline;
     }
