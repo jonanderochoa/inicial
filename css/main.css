@@ -250,6 +250,23 @@ button{
 #ejer2 article > div div{
     height: calc(200px - 35px); /* */
 }
+
+/* ****** FLEX ******* */
+.flex-container {
+    display: flex;
+}
+
+main section:last-child{  /* Todos los hijos usan flex */
+    flex-wrap:wrap;
+    justify-content: center; /* Con esto centramos los hijos */
+}
+
+
+main section:last-child article{  /* Todos los hijos usan flex */
+    flex-wrap:wrap;
+    flex-direction:column;
+}
+
 /* */
 /* ==========================================================================
    Helper classes
