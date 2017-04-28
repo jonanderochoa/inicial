@@ -13,62 +13,61 @@
         <!-- Place favicon.ico in the root directory -->
 
         <link rel="stylesheet" href="css/normalize.css">
-        <link rel="stylesheet" href="css/main.css">
+        <link rel="stylesheet" href="css/main.css?v=20170428">
         <script src="js/vendor/modernizr-2.8.3.min.js"></script>
     </head>
     <body>
         <!--[if lt IE 8]>
             <p class="browserupgrade">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade your browser</a> to improve your experience.</p>
         <![endif]-->
-
-        <header><h1>Bienvenido a mi Web</h1></header>
-
         <nav>
             <ul>
                 <li><a href="#ejer1">Ejercicio1</a></li>
-                <li><a href="#listas_ordenadas">Listas ordenadas</a></li>
+                <li><a href="segunda.html">Segunda</a></li>
                 <li><a href="#section_multimedia">Mutimedia</a></li>
             </ul>
         </nav>
-
-        <main>
-            <section id="listas_ordenadas">
-                <header><h2>Listas no ordenadas</h2></header>
-                <div>
-                    Lista de series:
-                    <ol>
-                        <li>Series de animación
-                            <ul>
-                                <li>Dragoi Bola</li>
-                                <li>Dragoi Bola</li>
-                            </ul>
-                        </li>
-                        <li>Series no animadas
-                            <ol>
-                                <li>Fringe</li>
-                                <li>Futurama</li>
-                                <li>Mr. Robot</li>
-                            </ol>
-                        </li>
-                    </ol>
-                </div>
-            </section>
-            <section id="tabla2">
-                <header><h2>Tabla de ejemplo</h2></header>
-                <table id="tabla_series">
-                    <!--
-                    Las tablas se usan para mostrar datos
-                    en pantalla. PARA NADA MAS!!
-                    -->
-                    <caption>Series de netflix</caption>
-                    <thead>
+        <!--wrapper -->
+        <div id="wrapper">
+            <header><h1>Bienvenido a mi Web</h1></header>
+            <main>
+                <section id="listas_ordenadas">
+                    <header><h2>Listas no ordenadas</h2></header>
+                    <div>
+                        Lista de series:
+                        <ol>
+                            <li>Series de animación
+                                <ul>
+                                    <li>Dragoi Bola</li>
+                                    <li>Dragoi Bola</li>
+                                </ul>
+                            </li>
+                            <li>Series no animadas
+                                <ol>
+                                    <li>Fringe</li>
+                                    <li>Futurama</li>
+                                    <li>Mr. Robot</li>
+                                </ol>
+                            </li>
+                        </ol>
+                    </div>
+                </section>
+                <section id="tabla2">
+                    <header><h2>Tabla de ejemplo</h2></header>
+                    <table id="tabla_series">
+                        <!--
+                        Las tablas se usan para mostrar datos
+                        en pantalla. PARA NADA MAS!!
+                        -->
+                        <caption>Series de netflix</caption>
+                        <thead>
                         <tr>
                             <th>Título</th>
                             <th>Año</th>
                             <th>Duración</th>
                         </tr>
-                    </thead>
-                    <tbody>
+                        </thead>
+                        <tbody>
                         <tr>
                             <td rowspan="2">Futurama</td>
                             <td>1999-2008</td>
@@ -82,91 +81,135 @@
                             <td>1999-Actualmente</td>
                             <td>35 min.</td>
                         </tr>
-                    </tbody>
-                    <tfoot>
+                        </tbody>
+                        <tfoot>
                         <tr>
                             <td>Número de series</td>
                             <td colspan="2">2</td>
                         </tr>
-                    </tfoot>
-                </table>
-            </section>
-            <section id="section_multimedia">
-                <header><h2>Multimedia</h2></header>
-                <div class="clearfix"><!--Clearfix rompe el salto de linea despues del div como clear:both -->
-                    <div class="lft" width="200" height="200">
-                        <audio controls>
-                            <source src="multimedia/kalimba.mp3" type="audio/mpeg"/>
-                        </audio>
+                        </tfoot>
+                    </table>
+                </section>
+                <section id="section_multimedia">
+                    <header><h2>Multimedia</h2></header>
+                    <div class="clearfix"><!--Clearfix rompe el salto de linea despues del div como clear:both -->
+                        <div class="lft multim">
+                            <audio controls>
+                                <source src="multimedia/kalimba.mp3" type="audio/mpeg"/>
+                            </audio>
+                        </div>
+                        <div class="lft multim">
+                            <audio controls>
+                                <source src="multimedia/Sleep%20Away.mp3" type="audio/mpeg"/>
+                            </audio>
+                        </div>
+                        <div class="lft multim">
+                            <audio controls>
+                                <source src="multimedia/Maid%20with%20the%20Flaxen%20Hair.mp3" type="audio/mpeg"/>
+                            </audio>
+                        </div>
                     </div>
-                    <div class="lft" width="200" height="200">
-                        <audio controls>
-                            <source src="multimedia/Sleep%20Away.mp3" type="audio/mpeg"/>
-                        </audio>
+                    <div id="video">
+                        <video controls>
+                            <source src="">
+                        </video>
+                        <div style="position:relative;height:0;padding-bottom:50.0%"><iframe
+                            src="https://www.youtube.com/embed/6YqyGPW-foA?ecver=2"
+                            width="200" height="200" frameborder="0"
+                            style="position:absolute;width:50%;height:60%;left:0"
+                            allowfullscreen></iframe>
+                        </div>
                     </div>
-                    <div class="lft" width="200" height="200">
-                        <audio controls>
-                            <source src="multimedia/Maid%20with%20the%20Flaxen%20Hair.mp3" type="audio/mpeg"/>
-                        </audio>
-                    </div>
-                </div>
-                <div id="video">
-                    <video controls>
-                        <source src="">
-                    </video>
-                    <div style="position:relative;height:0;padding-bottom:50.0%"><iframe
-                    src="https://www.youtube.com/embed/6YqyGPW-foA?ecver=2"
-                    width="200" height="200" frameborder="0"
-                    style="position:absolute;width:50%;height:60%;left:0"
-                    allowfullscreen></iframe>
-                    </div>
-                </div>
-            </section>
+                </section>
 
-            <section id="ejer1">
-                <div class=clearfix">
-                    <article class="lft miancho">
-                        <header><h3>header1</h3></header>
-                        <div class="clearfix">
-                            <div class="fondito medio lft"></div>
-                            <div class="medio lft">Lorem Ipsum es simplemente el texto de relleno de las imprentas
-                            y archivos de texto. Lorem Ipsum ha sido el texto de relleno
-                            estándar de las industrias desde el año 1500, cuando un impresor
-                            (N. del T. persona que se dedica a la imprenta) desconocido usó
-                            una galería de textos y los mezcló de tal manera que logró hacer.
-                                <div><button>pulsame3</button></div>
+                <section id="ejer1">
+                    <div class=clearfix">
+                        <article class="lft miancho">
+                            <header><h3>header1</h3></header>
+                            <div class="clearfix">
+                                <img class="medio lft" src="http://battleroyalewithcheese.com/wp-content/uploads/2015/06/Homer_simpsonwoohooo.gif" alt="homer">
+                                <div class="medio lft">Lorem Ipsum es simplemente el texto de relleno de las imprentas
+                                    y archivos de texto. Lorem Ipsum ha sido el texto de relleno
+                                    estándar de las industrias desde el año 1500, cuando un impresor
+                                    (N. del T. persona que se dedica a la imprenta) desconocido usó
+                                    una galería de textos y los mezcló de tal manera que logró hacer.
+                                    <div><button>Leer más</button></div>
+                                </div>
+
                             </div>
-                        </div>
-                    </article>
-                    <article class="lft miancho">
-                        <header><h3>header1</h3></header>
-                        <div class="clearfix">
-                            <div class="fondito medio lft"></div>
-                            <div class="medio lft">Lorem Ipsum es simplemente el texto de relleno de las imprentas
-                                y archivos de texto. Lorem Ipsum ha sido el texto de relleno
-                                estándar de las industrias desde el año 1500, cuando un impresor
-                                (N. del T. persona que se dedica a la imprenta) desconocido usó
-                                una galería de textos y los mezcló de tal manera que logró hacer.
-                                <div><button>pulsame3</button></div>
+                        </article>
+                        <article class="lft miancho">
+                            <header><h3>header2</h3></header>
+                            <div class="clearfix">
+                                <img class="medio lft" src="http://battleroyalewithcheese.com/wp-content/uploads/2015/06/Homer_simpsonwoohooo.gif" alt="homer">
+                                <div class="medio lft">Lorem Ipsum es simplemente el texto de relleno de las imprentas
+                                    y archivos de texto. Lorem Ipsum ha sido el texto de relleno
+                                    estándar de las industrias desde el año 1500, cuando un impresor
+                                    (N. del T. persona que se dedica a la imprenta) desconocido usó
+                                    una galería de textos y los mezcló de tal manera que logró hacer.
+                                    <div><button>Leer más</button></div>
+                                </div>
                             </div>
-                        </div>
-                    </article>
-                    <article class="lft miancho">
-                        <header><h3>header1</h3></header>
-                        <div class="clearfix">
-                            <div class="fondito medio lft"></div>
-                            <div class="medio lft">Lorem Ipsum es simplemente el texto de relleno de las imprentas
-                                y archivos de texto. Lorem Ipsum ha sido el texto de relleno
-                                estándar de las industrias desde el año 1500, cuando un impresor
-                                (N. del T. persona que se dedica a la imprenta) desconocido usó
-                                una galería de textos y los mezcló de tal manera que logró hacer.
-                                <div><button>pulsame3</button></div>
+                        </article>
+                        <article class="lft miancho">
+                            <header><h3>header3</h3></header>
+                            <div class="clearfix">
+                                <img class="medio lft" src="http://battleroyalewithcheese.com/wp-content/uploads/2015/06/Homer_simpsonwoohooo.gif" alt="homer">
+                                <div class="medio lft">Lorem Ipsum es simplemente el texto de relleno de las imprentas
+                                    y archivos de texto. Lorem Ipsum ha sido el texto de relleno
+                                    estándar de las industrias desde el año 1500, cuando un impresor
+                                    (N. del T. persona que se dedica a la imprenta) desconocido usó
+                                    una galería de textos y los mezcló de tal manera que logró hacer.
+                                    <div class="boton"><button>Leer más</button></div>
+                                </div>
                             </div>
-                        </div>
-                    </article>
-                </div>
-            </section>
-        </main>
+                        </article>
+                    </div>
+                </section>
+
+
+                <!-- EJERCICIO 1 DE LA FORMA DE URKO -->
+                <section id="ejer2">
+                    <header><h2>Ejercicio de Flotantes</h2></header>
+                    <div class="clearfix">
+                        <article>
+                            <header><h3>Video de Java Zone 2011</h3></header>
+                            <div>
+                                <img class="medio lft" src="http://battleroyalewithcheese.com/wp-content/uploads/2015/06/Homer_simpsonwoohooo.gif" alt="homer">
+                            </div>
+                            <div>
+                                <div>En una familia todo era feliz y bello hasta que...</div>
+                                <button>Leer</button>
+                            </div>
+                        </article>
+                        <article>
+                            <header><h3>Video de Java Zone 2012</h3></header>
+                            <div>
+                                <img class="medio lft" src="http://battleroyalewithcheese.com/wp-content/uploads/2015/06/Homer_simpsonwoohooo.gif" alt="homer">
+                            </div>
+                            <div>
+                                <div>
+                                    Ocurre algo fatal java se desistala en todos los equipos.
+
+                                </div>
+                                <button>Leer</button>
+                            </div>
+                        </article>
+                        <article>
+                            <header><h3>Video de Java Zone 2013</h3></header>
+                            <div class="">
+                                <img class="medio lft" src="http://battleroyalewithcheese.com/wp-content/uploads/2015/06/Homer_simpsonwoohooo.gif" alt="homer">
+                            </div>
+                            <div class="">
+                                <div>Se trama el atraco del siglo.</div>
+                                <button>Leer</button>
+                            </div>
+                        </article>
+                    </div>
+                </section>
+            </main>
+        </div>
+
 
 
 
