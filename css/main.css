@@ -254,6 +254,7 @@ button{
 /* ****** FLEX ******* */
 .flex-container {
     display: flex;
+    align-content: flex-start;
 }
 
 main section:last-child{  /* Todos los hijos usan flex */
@@ -265,6 +266,41 @@ main section:last-child{  /* Todos los hijos usan flex */
 main section:last-child article{  /* Todos los hijos usan flex */
     flex-wrap:wrap;
     flex-direction:column;
+}
+
+.ocultar{
+    visibility: hidden;
+    display:none;
+}
+
+
+/*==========  Mobile First Method  ==========*/
+
+/* Custom, iPhone Retina */
+@media only screen and (min-width : 320px) {
+    flex{
+        flex-direction: column;
+    }
+}
+
+/* Extra Small Devices, Phones */
+@media only screen and (min-width : 480px) {
+
+}
+
+/* Small Devices, Tablets */
+@media only screen and (min-width : 768px) {
+
+}
+
+/* Medium Devices, Desktops */
+@media only screen and (min-width : 992px) {
+
+}
+
+/* Large Devices, Wide Screens */
+@media only screen and (min-width : 1200px) {
+
 }
 
 /* */
