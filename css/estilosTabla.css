@@ -1,3 +1,8 @@
+.main{
+    flex-direction: column;
+    flex-wrap: wrap;
+}
+
 .flex-container{
     display:flex;
 
@@ -8,7 +13,19 @@
     display: inline-flex;
     display:flex;
 }
+.header{
+    background-color: chartreuse;
+    color:gray;
+}
 
+.fa-facebook-square{
+    font-size: 200px;
+
+    color:darkblue;
+}
+.fa-facebook-square:hover{
+    transition: 2s; color:darkmagenta;
+}
 .wrapper{
     display:-webkit-flex;/*Para versiones de navegador chrome version ...*/
     display: inline-flex;/* IE 9 */
@@ -21,6 +38,7 @@
     -webkit-flex-shrink: 0;
     flex-shrink: 0;
     vertical-align: top;
+    text-align: center;
 }
 
 .index{
@@ -34,4 +52,68 @@
 .address-city-zip_code{
     -webkit-flex-grow:1;
     flex-grow: 1;
+}
+.name{width: 75px;}
+.surename{width: 150px;}
+.dni{width: 50px;}
+.date-of-birth{width: 100px;}
+.email{width: 100px;}
+.telephone{width: 100px;}
+.address{width: 100px;}
+.city{width: 100px;}
+.zip_code{width: 100px;}
+
+ul.rrss li{
+   background: url(../img/rss-sprites.jpg) transparent no-repeat 0 0;
+}
+.linkedin{
+    background-position: 50px, 50px;
+
+}
+.twitter{
+
+}
+/*==========  Mobile First Method  ==========*/
+
+/* Custom, iPhone Retina */
+@media only screen and (min-width : 320px) {
+
+    .address-city-zip_code,
+    .email-telephone,
+    .name-surename-dni,
+    .name-surname-dni-date_of_birth,
+    .name-surename{
+        flex-direction: column; /* Lo centra en el eje principal (X) */
+        align-items:center; /* Alinea: Centra en el segundo eje */
+        justify-content: flex-start;
+    }
+}
+/* Extra Small Devices, Phones */
+@media only screen and (min-width : 480px) {
+    .name-surname-dni-date_of_birth{
+        flex-direction: row;
+        justify-content: center; /* Me lo centra en el eje (X) */
+        align-items: flex-start; /* Justifica a la izquierda */
+    }
+}
+/* Small Devices, Tablets */
+@media only screen and (min-width : 768px) {
+   .name-surename-dni{
+        flex-direction: row; /* Lo alinea en linea */
+       align-items: flex-start;/* No queremos que lo centre verticalmente */
+    }
+}
+/* Medium Devices, Desktops */
+@media only screen and (min-width : 992px) {
+    .address-city-zip_code,
+    .email-telephone,
+    .name-surename{
+        flex-direction: row;
+        align-items: flex-start;
+        justify-content: center;
+    }
+}
+/* Large Devices, Wide Screens */
+@media only screen and (min-width : 1200px) {
+
 }
